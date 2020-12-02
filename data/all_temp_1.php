@@ -1,9 +1,9 @@
 <?php
     // For database connections
-    include_once 'database.php';
+    include_once 'table_temp_1.php';
 
     // MySQL select all data
-    $sql = "SELECT * FROM $dbname.$tbname ORDER BY ID DESC LIMIT 1";
+    $sql = "SELECT * FROM $dbname.$tbname";
     
     // Perform Query
     $result = mysqli_query($conn,$sql);

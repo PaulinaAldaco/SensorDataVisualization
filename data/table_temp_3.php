@@ -4,7 +4,7 @@
     $username   = "datasensor";
     $password   = "Zr6l8~0I4?Hx";
     $dbname     = "datasensor";
-    $tbname     = "sensor";
+    $tbname     = "sensor_temp_3";
 
     // Create database connection
     $conn=mysqli_connect($servername,$username,$password,"$dbname");

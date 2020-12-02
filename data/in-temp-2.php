@@ -1,6 +1,6 @@
 <?php
     // For database connections
-    include_once 'database.php';
+    include_once 'table_temp_2.php';
 
     // http://tc1004b-project-template.gearhostpreview.com/data/in.php?var1=95.23&var2=13.4
 

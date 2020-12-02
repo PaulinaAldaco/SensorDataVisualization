@@ -1,6 +1,6 @@
 <?php
     // For database connections
-    include_once 'database.php';
+    include_once 'table_temp_2.php';
 
     // MySQL select all data
     $sql = "SELECT * FROM $dbname.$tbname";
