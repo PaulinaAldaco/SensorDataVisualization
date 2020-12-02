@@ -33,19 +33,19 @@ gauge1.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 gauge1.animationSpeed = 57; // set animation speed (32 is default value)
 
 
-//Gauge 2
-var target2 = document.getElementById('myGauge2'); // your canvas element
-var gauge2 = new Gauge(target2).setOptions(opts); // create sexy gauge!
+// //Gauge 2
+// var target2 = document.getElementById('myGauge2'); // your canvas element
+// var gauge2 = new Gauge(target2).setOptions(opts); // create sexy gauge!
 
-gauge2.maxValue = 100; // set max gauge value
-gauge2.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-gauge2.animationSpeed = 57; // set animation speed (32 is default value)
+// gauge2.maxValue = 100; // set max gauge value
+// gauge2.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+// gauge2.animationSpeed = 57; // set animation speed (32 is default value)
 
 
-//Gauge 3
-var target3 = document.getElementById('myGauge3'); // your canvas element
-var gauge3 = new Gauge(target3).setOptions(opts); // create sexy gauge!
+// //Gauge 3
+// var target3 = document.getElementById('myGauge3'); // your canvas element
+// var gauge3 = new Gauge(target3).setOptions(opts); // create sexy gauge!
 
-gauge3.maxValue = 100; // set max gauge value
-gauge3.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-gauge3.animationSpeed = 57; // set animation speed (32 is default value)
+// gauge3.maxValue = 100; // set max gauge value
+// gauge3.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+// gauge3.animationSpeed = 57; // set animation speed (32 is default value)
