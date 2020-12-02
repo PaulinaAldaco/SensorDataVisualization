@@ -1,12 +1,12 @@
 
 // Create Chart with no data
 var ctx = document.getElementById('myChart1').getContext('2d');
-var myChart = new Chart(ctx, {
+var myChart1 = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [],         // Labels are empty
         datasets: [{
-            label: 'Distance [mm]',
+            label: 'Humidity',
             data: [],       // Data is empty Adding it later, allows to see a pretty animation!
             fill: false,
             borderColor: 'rgba(255, 99, 132, 1)',     
@@ -20,7 +20,7 @@ var myChart = new Chart(ctx, {
         stacked: false,
         title: {
             display: true,
-            text: 'Distancia'
+            text: 'Humidity Sensor 1'
         },
         scales: {
         }
