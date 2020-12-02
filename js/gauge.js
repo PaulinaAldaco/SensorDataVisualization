@@ -9,7 +9,7 @@ var opts = {
   },
   staticLabels: {
       font: "10px sans-serif",  // Specifies font
-      labels: [0, 100, 200, 300, 400, 500],  // Print labels at these values
+      labels: [0, 20, 40, 60, 80, 100],  // Print labels at these values
       color: "#000000",  // Optional: Label text color
       fractionDigits: 0  // Optional: Numerical precision. 0=round off.
   },
@@ -20,7 +20,7 @@ var opts = {
   strokeColor: '#E0E0E0',  // to see which ones work best for you
   generateGradient: true,
   highDpiSupport: true,     // High resolution support
-  percentColors: [[0.0, "#a9d70b" ], [200, "#f9c802"], [400, "#ff0000"]]   // Make color react according to the position of the needle
+  percentColors: [[0.0, "#a9d70b" ], [50, "#f9c802"], [80, "#ff0000"]]   // Make color react according to the position of the needle
   
 };
 
