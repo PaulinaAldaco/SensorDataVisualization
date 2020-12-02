@@ -14,7 +14,7 @@
     // Only insert, if variables are not empty
     if(isset($var1) || isset($var2)){
         // MySQL injection query
-        $sql = "INSERT INTO sensor (sensor1Value, sensor2Value)
+        $sql = "INSERT INTO sensor_temp_1 (sensor1Value, sensor2Value)
         VALUES ('$var1','$var2')";
         
         // Insert into database
