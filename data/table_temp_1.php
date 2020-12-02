@@ -1,6 +1,6 @@
 <?php
     // Database credentials
-    $servername = " den1.mysql1.gear.host ";
+    $servername = "den1.mysql1.gear.host";
     $username   = "datasensor";
     $password   = "Zr6l8~0I4?Hx";
     $dbname     = "datasensor";
