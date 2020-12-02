@@ -6,7 +6,7 @@
     //$sql = "SELECT sensor1Value FROM $dbname.$tbname WHERE sensor1Value IS NOT NULL ORDER BY ID DESC LIMIT 1";
 
     //Get last values that are not null
-    $sql = "SELECT sensor1Value FROM $dbname.$tbname WHERE sensor1Value IS NOT NULL ORDER BY ID DESC LIMIT 1) as sensor1Value"
+    $sql = "SELECT sensor1Value AS sensor1Value FROM $dbname.$tbname WHERE sensor1Value IS NOT NULL ORDER BY ID DESC LIMIT 1";
     
     // Perform Query
     $result = mysqli_query($conn,$sql);
