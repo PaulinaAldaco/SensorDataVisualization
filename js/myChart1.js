@@ -1,7 +1,7 @@
 
 // Create Chart with no data
 var ctx = document.getElementById('myChart1').getContext('2d');
-var myChart = new Chart(ctx, {
+var myChart1 = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [],         // Labels are empty
@@ -54,7 +54,7 @@ $.ajax(
                 // Extract time from timestamp
                 sensorTime = new Date(jsonData[row]['timestamp']).toLocaleTimeString();
                 // Add data to chart
-                addData(myChart, sensorTime, sensor1Data);
+                addData(myChart1, sensorTime, sensor1Data);
             }
             gauge1.set(sensor2Data); // set value of the gauge to the last value of sensor2Value
         },
@@ -82,7 +82,7 @@ $.ajax(
                 This technique is for demonstration purposes. A better way, should be 
                 add another field at the database and update it when data was added to chart.
                 */
-                if(myChart.data.labels[myChart.data.labels.length - 1] === sensorTime)
+                if(myChart1.data.labels[myChart1.data.labels.length - 1] === sensorTime)
                 {
                     // Do nothing
                     console.log('No new data');
@@ -90,7 +90,7 @@ $.ajax(
                 else
                 {
                     // Add new record to chart
-                    addData(myChart, sensorTime, sensor1Data);
+                    addData(myChart1, sensorTime, sensor1Data);
                     gauge1.set(sensor2Data); // set actual value
                 }
     
