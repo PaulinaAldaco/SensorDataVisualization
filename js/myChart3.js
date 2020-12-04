@@ -82,7 +82,7 @@ $.ajax(
                 This technique is for demonstration purposes. A better way, should be 
                 add another field at the database and update it when data was added to chart.
                 */
-                if(myChart3.data.labels[myChart3.data.labels.length - 1] === sensorTime)
+                if(myChart.data.labels[myChart.data.labels.length - 1] === sensorTime)
                 {
                     // Do nothing
                     console.log('No new data');
