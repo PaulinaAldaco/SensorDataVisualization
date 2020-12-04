@@ -3,15 +3,30 @@
     <head>
         <title>My application</title>
     </head>
-
+    <style>
+        .tab{
+            display: inline-block;
+            margin-left: 300px;
+        }
+    </style>
     <body>
-        <h1>Sensor 1</h1>
+        <h1 style="color: green">Sensor 1  <span class="tab"></span> Sensor 2  <span class="tab"></span>Sensor 3</h1>
         <div>
-            <canvas id="myGauge1" width="1000" height="500"></canvas>
+            <canvas id="myGauge1" width="420" height="250"></canvas>
+            <!--&nbsp;&nbsp;&nbsp; -->
+            <canvas id="myGauge2" width="420" height="250"></canvas>
+            <!--&nbsp;&nbsp;&nbsp; -->
+            <canvas id="myGauge3" width="420" height="250"></canvas>
         </div>
 
         <div>
             <canvas id="myChart1"></canvas>
+        </div>
+        <div>
+            <canvas id="myChart2"></canvas>
+        </div>
+        <div>
+            <canvas id="myChart3"></canvas>
         </div>
     </body>
 
@@ -19,8 +34,12 @@
 
     <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
     <script src="js/gauge.js"></script>
+    <script src="js/gauge2.js"></script>
+    <script src="js/gauge3.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="js/mychart1.js"></script>
+    <script src="js/mychart2.js"></script>
+    <script src="js/mychart3.js"></script>
 
 </html>

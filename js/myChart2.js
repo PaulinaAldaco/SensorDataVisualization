@@ -6,7 +6,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: [],         // Labels are empty
         datasets: [{
-            label: 'Distance [mm]',
+            label: 'Humidity',
             data: [],       // Data is empty Adding it later, allows to see a pretty animation!
             fill: false,
             borderColor: 'rgba(255, 99, 132, 1)',     
@@ -20,7 +20,7 @@ var myChart = new Chart(ctx, {
         stacked: false,
         title: {
             display: true,
-            text: 'Distancia'
+            text: 'Humidity Sensor 2'
         },
         scales: {
         }
@@ -91,7 +91,7 @@ $.ajax(
                 {
                     // Add new record to chart
                     addData(myChart2, sensorTime, sensor1Data);
-                    gauge.set(sensor2Data); // set actual value
+                    gauge2.set(sensor2Data); // set actual value
                 }
     
             },
