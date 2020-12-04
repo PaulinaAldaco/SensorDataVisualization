@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My application</title>
-    </head>
     <style>
         .tab{
             display: inline-block;
@@ -12,8 +9,24 @@
             display: inline-block;
             margin-left: 100px;
         }
+        h1 {
+            border: 1px solid black;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            margin-right: 10px;
+            margin-left: 10px;
+            background-color: #fae6fa;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 1px solid black;
+          }
     </style>
     <body>
+        <head>
+            <title>My application</title>
+        </head>
         <h1 style="color: lightseagreen">Paulina  <span class="tab"></span> Guillermo  <span class="tab"></span>Jesús</h1>
         <h1 style="color: orangered">Sensor 1: Temperatura  <span class="tab2"></span> Sensor 2: Temperatura  <span class="tab2"></span>Sensor 3: Temperatura</h1>    
         <div>
@@ -25,12 +38,15 @@
         </div>
 
         <div>
+            <h1 style="color: #e3b271">Paulina  </h1>
             <canvas id="myChart1"></canvas>
         </div>
         <div>
+            <h1 style="color: #35b59d">Guillermo  </h1>
             <canvas id="myChart2"></canvas>
         </div>
         <div>
+            <h1 style="color: #c23669">Jesús  </h1>
             <canvas id="myChart3"></canvas>
         </div>
     </body>
