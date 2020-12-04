@@ -1,7 +1,7 @@
 
 // Create Chart with no data
 var ctx = document.getElementById('myChart2').getContext('2d');
-var myChart2 = new Chart(ctx, {
+var myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [],         // Labels are empty
@@ -9,8 +9,8 @@ var myChart2 = new Chart(ctx, {
             label: 'Humidity',
             data: [],       // Data is empty Adding it later, allows to see a pretty animation!
             fill: false,
-            borderColor: 'rgba(255, 99, 132, 1)',     
-            borderWidth: 1,
+            borderColor: '#35b59d',     
+            borderWidth: 3,
             lineTension: 0
         }]
     },
