@@ -1,7 +1,7 @@
 
 // Create Chart with no data
 var ctx = document.getElementById('myChart2').getContext('2d');
-var myChart2 = new Chart(ctx, {
+var myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [],         // Labels are empty
@@ -54,7 +54,7 @@ $.ajax(
                 // Extract time from timestamp
                 sensorTime = new Date(jsonData[row]['timestamp']).toLocaleTimeString();
                 // Add data to chart
-                addData(myChart2, sensorTime, sensor1Data);
+                addData(myChart, sensorTime, sensor1Data);
             }
             gauge2.set(sensor2Data); // set value of the gauge to the last value of sensor2Value
         },
@@ -90,7 +90,7 @@ $.ajax(
                 else
                 {
                     // Add new record to chart
-                    addData(myChart2, sensorTime, sensor1Data);
+                    addData(myChart, sensorTime, sensor1Data);
                     gauge2.set(sensor2Data); // set actual value
                 }
     
