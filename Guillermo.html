@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My application</title>
+    </head>
+    <style>
+        .tab{
+            display: inline-block;
+            margin-left: 300px;
+        }
+        .tab2{
+            display: inline-block;
+            margin-left: 100px;
+        }
+    </style>
+
+    <body>
+        <input type="button" value="Click me">
+        <a href="index.html">Home</a>
+        <h1 style="color: lightseagreen"> Guillermo  </h1>
+        <h1 style="color: orangered">Sensor 2: Temperatura</h1> 
+        <div>
+            <canvas id="myGauge2" width="420" height="250"></canvas>
+        </div>
+
+        <div>
+            <canvas id="myChart2"></canvas>
+        </div>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+    <script src="index.html"></script>
+    <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+    <script src="js/gauge2.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/mychart2.js"></script>
+</html>
