@@ -1,7 +1,7 @@
 
 // Create Chart with no data
 var ctx = document.getElementById('myChart2').getContext('2d');
-var myChart = new Chart(ctx, {
+var myChart2 = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [],         // Labels are empty
@@ -56,7 +56,7 @@ $.ajax(
                 // Add data to chart
                 addData(myChart2, sensorTime, sensor1Data);
             }
-            gauge.set(sensor2Data); // set value of the gauge to the last value of sensor2Value
+            gauge2.set(sensor2Data); // set value of the gauge to the last value of sensor2Value
         },
         error: function() {
           console.log('There was some error performing the AJAX call!');
